@@ -1,0 +1,3395 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >generator-ng-fullstack (v1.9.14)</a>
+</h1>
+<h4>Client, server or fullstack - it's up to you. ng-fullstack gives you the best of the latest: Node, Go, HTTP/2, Angular 1, Angular 2, Vue, Aurelia, Express, Koa, Echo, Gin, MongoDB, Gulp, Babel, Typescript and much more.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack">module generator-ng-fullstack</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.generator-ng-fullstack">
+            function <span class="apidocSignatureSpan"></span>generator-ng-fullstack
+            <span class="apidocSignatureSpan">(args, options, config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>angular</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>aurelia</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>client_factory</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>errors</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>generator</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>go_base</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>go_echo</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>go_factory</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>go_gin</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>node_base</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>node_express</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>node_factory</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>node_koa</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>options_parser</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>server_factory</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>style</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_component</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_controller</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_decorator</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_directive</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_endpoint</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_factory</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_filter</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_model</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_module</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_pipe</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_resource</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_service</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_style</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>sub_generators_view</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>vue</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">generator-ng-fullstack.</span>yeoman_utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.angular">module generator-ng-fullstack.angular</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.angular.Angular1">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.angular.</span>Angular1
+            <span class="apidocSignatureSpan">(gen)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.angular.Angular2">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.angular.</span>Angular2
+            <span class="apidocSignatureSpan">(gen)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.angular.AngularFactory">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.angular.</span>AngularFactory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.aurelia">module generator-ng-fullstack.aurelia</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.aurelia.Aurelia1">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.aurelia.</span>Aurelia1
+            <span class="apidocSignatureSpan">(gen)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.aurelia.AureliaFactory">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.aurelia.</span>AureliaFactory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.client_factory">module generator-ng-fullstack.client_factory</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.client_factory.ClientFactory">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.client_factory.</span>ClientFactory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.errors">module generator-ng-fullstack.errors</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.errors.FeatureMissingError">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.errors.</span>FeatureMissingError
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.errors.ModuleDoesntImplementError">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.errors.</span>ModuleDoesntImplementError
+            <span class="apidocSignatureSpan">(module, subGenerator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.generator">module generator-ng-fullstack.generator</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.generator.MainGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.generator.</span>MainGenerator
+            <span class="apidocSignatureSpan">(gen)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.go_base">module generator-ng-fullstack.go_base</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.go_base.GoBase">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.go_base.</span>GoBase
+            <span class="apidocSignatureSpan">(generator, webFramework)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.go_echo">module generator-ng-fullstack.go_echo</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.go_echo.GoEcho">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.go_echo.</span>GoEcho
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.go_factory">module generator-ng-fullstack.go_factory</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.go_factory.GoFactory">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.go_factory.</span>GoFactory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.go_gin">module generator-ng-fullstack.go_gin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.go_gin.GoGin">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.go_gin.</span>GoGin
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.node_base">module generator-ng-fullstack.node_base</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.node_base.NodeBaseBabel">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.node_base.</span>NodeBaseBabel
+            <span class="apidocSignatureSpan">(generator, webFramework)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.node_base.NodeBaseStandard">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.node_base.</span>NodeBaseStandard
+            <span class="apidocSignatureSpan">(generator, webFramework)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.node_base.NodeBaseTypescript">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.node_base.</span>NodeBaseTypescript
+            <span class="apidocSignatureSpan">(generator, webFramework)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.node_express">module generator-ng-fullstack.node_express</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.node_express.NodeExpressBabel">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.node_express.</span>NodeExpressBabel
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.node_express.NodeExpressStandard">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.node_express.</span>NodeExpressStandard
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.node_express.NodeExpressTypescript">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.node_express.</span>NodeExpressTypescript
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.node_factory">module generator-ng-fullstack.node_factory</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.node_factory.NodeFactory">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.node_factory.</span>NodeFactory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.node_koa">module generator-ng-fullstack.node_koa</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.node_koa.NodeKoaBabel">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.node_koa.</span>NodeKoaBabel
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.node_koa.NodeKoaStandard">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.node_koa.</span>NodeKoaStandard
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.node_koa.NodeKoaTypescript">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.node_koa.</span>NodeKoaTypescript
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.options_parser">module generator-ng-fullstack.options_parser</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.options_parser.getFeature">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.options_parser.</span>getFeature
+            <span class="apidocSignatureSpan">(opt)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.options_parser.isClientOnly">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.options_parser.</span>isClientOnly
+            <span class="apidocSignatureSpan">(opt)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.options_parser.isServerOnly">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.options_parser.</span>isServerOnly
+            <span class="apidocSignatureSpan">(opt)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.server_factory">module generator-ng-fullstack.server_factory</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.server_factory.ServerFactory">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.server_factory.</span>ServerFactory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.style">module generator-ng-fullstack.style</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.style.copyStyleForMainGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.style.</span>copyStyleForMainGenerator
+            <span class="apidocSignatureSpan">(gen, dest)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.style.copyStyleForSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.style.</span>copyStyleForSubGenerator
+            <span class="apidocSignatureSpan">(gen, path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.style.normalizeStylePreprocessor">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.style.</span>normalizeStylePreprocessor
+            <span class="apidocSignatureSpan">(stylePreprocessor)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_component">module generator-ng-fullstack.sub_generators_component</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_component.ComponentSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_component.</span>ComponentSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_controller">module generator-ng-fullstack.sub_generators_controller</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_controller.ControllerSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_controller.</span>ControllerSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_decorator">module generator-ng-fullstack.sub_generators_decorator</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_decorator.DecoratorSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_decorator.</span>DecoratorSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_directive">module generator-ng-fullstack.sub_generators_directive</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_directive.DirectiveSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_directive.</span>DirectiveSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_endpoint">module generator-ng-fullstack.sub_generators_endpoint</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_endpoint.EndpointSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_endpoint.</span>EndpointSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_factory">module generator-ng-fullstack.sub_generators_factory</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_factory.FactorySubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_factory.</span>FactorySubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_filter">module generator-ng-fullstack.sub_generators_filter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_filter.FilterSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_filter.</span>FilterSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_model">module generator-ng-fullstack.sub_generators_model</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_model.ModelSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_model.</span>ModelSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_module">module generator-ng-fullstack.sub_generators_module</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_module.ModuleSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_module.</span>ModuleSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_pipe">module generator-ng-fullstack.sub_generators_pipe</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_pipe.PipeSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_pipe.</span>PipeSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_resource">module generator-ng-fullstack.sub_generators_resource</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_resource.ResourceSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_resource.</span>ResourceSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_service">module generator-ng-fullstack.sub_generators_service</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_service.ServiceSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_service.</span>ServiceSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_style">module generator-ng-fullstack.sub_generators_style</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_style.StyleSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_style.</span>StyleSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.sub_generators_view">module generator-ng-fullstack.sub_generators_view</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.sub_generators_view.ViewSubGenerator">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_view.</span>ViewSubGenerator
+            <span class="apidocSignatureSpan">(generator)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.utils">module generator-ng-fullstack.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.utils.capitalizeFirst">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.utils.</span>capitalizeFirst
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.vue">module generator-ng-fullstack.vue</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.vue.Vue2">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.vue.</span>Vue2
+            <span class="apidocSignatureSpan">(gen)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.vue.VueFactory">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.vue.</span>VueFactory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.generator-ng-fullstack.yeoman_utils">module generator-ng-fullstack.yeoman_utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.generator-ng-fullstack.yeoman_utils.directory">
+            function <span class="apidocSignatureSpan">generator-ng-fullstack.yeoman_utils.</span>directory
+            <span class="apidocSignatureSpan">(gen, paths, opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack" id="apidoc.module.generator-ng-fullstack">module generator-ng-fullstack</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.generator-ng-fullstack" id="apidoc.element.generator-ng-fullstack.generator-ng-fullstack">
+        function <span class="apidocSignatureSpan"></span>generator-ng-fullstack
+        <span class="apidocSignatureSpan">(args, options, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NgFullstack extends Base {
+    constructor(args, options, config) {
+        super(args, options, config);
+
+        this.generator = new MainGenerator(this);
+    }
+
+    initializing() {
+      this.pkg = require(&#x27;../package.json&#x27;);
+    }
+
+    prompting() {
+      this.generator.sayHello();
+    }
+
+    writing() {
+      this.generator.writing();
+    }
+
+    install() {
+      this.generator.install();
+    }
+
+    prompUser() {
+      this.generator.promptUser();
+    }
+
+    promptClient() {
+      this.generator.promptClient();
+    }
+
+    promptStylePreprocessor() {
+      this.generator.promptStylePreprocessor();
+    }
+
+    promptServer() {
+      this.generator.promptServer();
+    }
+
+    promptNodeWebFrameworkServer() {
+      this.generator.promptNodeWebFrameworkServer();
+    }
+
+    promptUserTranspilerServer() {
+      this.generator.promptTranspilerServer();
+    }
+
+    promptGoWebFrameworkServer() {
+      this.generator.promptGoWebFrameworkServer();
+    }
+
+    promptSecure() {
+      this.generator.promptSecure();
+    }
+
+    promptTests() {
+      this.generator.promptTests();
+    }
+
+    promptDifferentStaticServer() {
+      this.generator.promptDifferentStaticServer();
+    }
+
+    promptCordova() {
+      this.generator.promptCordova();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.angular" id="apidoc.module.generator-ng-fullstack.angular">module generator-ng-fullstack.angular</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.angular.Angular1" id="apidoc.element.generator-ng-fullstack.angular.Angular1">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.angular.</span>Angular1
+        <span class="apidocSignatureSpan">(gen)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class Angular1 {
+  constructor(gen) {
+    this.generator = gen;
+    this.testsSeparated = gen &#x26;&#x26; gen.testsSeparated !== undefined &#x26;&#x26; typeof(gen.testsSeparated) === &#x22;boolean&#x22; ? gen.testsSeparated
+ : true;
+    this.testsPath = this.testsSeparated ? knownPaths.PATH_CLIENT_FEATURES_TEST : knownPaths.PATH_CLIENT_FEATURES;
+  }
+
+  copyClient() {
+    let _pathSrc = [
+      [&#x27;client/ng1/dev/index.html&#x27;, &#x27;client/dev/index.html&#x27;],
+      [&#x27;client/ng1/dev/favicon.png&#x27;, &#x27;client/dev/favicon.png&#x27;],
+      [&#x27;client/ng1/dev/app.js&#x27;, &#x27;client/dev/app.js&#x27;],
+      [&#x27;client/ng1/dev/app.route.js&#x27;, &#x27;client/dev/app.route.js&#x27;],
+      [&#x27;client/ng1/dev/app.config.js&#x27;, &#x27;client/dev/app.config.js&#x27;],
+      [&#x27;client/ng1/dev/todo/controllers/todo-controller.js&#x27;, &#x27;client/dev/todo/controllers/todo-controller.js&#x27;],
+      [&#x27;client/ng1/dev/todo/models/todo-model.js&#x27;, &#x27;client/dev/todo/models/todo-model.js&#x27;],
+      [&#x27;client/ng1/dev/todo/services/todo-dao.js&#x27;, &#x27;client/dev/todo/services/todo-dao.js&#x27;],
+      [&#x27;client/ng1/dev/todo/resources/todo-resource.js&#x27;, &#x27;client/dev/todo/resources/todo-resource.js&#x27;],
+      [&#x27;client/ng1/dev/todo/templates/todo.html&#x27;, &#x27;client/dev/todo/templates/todo.html&#x27;]
+    ];
+
+    let _pathTest = [];
+
+    if(this.testsSeparated) {
+      _pathTest = [
+        [&#x27;tests/client_ng1/todo/controllers/todo-controller_test.js&#x27;, &#x27;tests/client/todo/controllers/todo-controller_test.js&#x27;],
+        [&#x27;tests/client_ng1/todo/models/todo-model_test.js&#x27;, &#x27;tests/client/todo/models/todo-model_test.js&#x27;],
+        [&#x27;tests/client_ng1/todo/services/todo-dao_test.js&#x27;, &#x27;tests/client/todo/services/todo-dao_test.js&#x27;]
+      ];
+    } else {
+      _pathTest = [
+        [&#x27;tests/client_ng1/todo/controllers/todo-controller_test.js&#x27;, &#x27;client/dev/todo/controllers/todo-controller_test.js&#x27;],
+        [&#x27;tests/client_ng1/todo/models/todo-model_test.js&#x27;, &#x27;client/dev/todo/models/todo-model_test.js&#x27;],
+        [&#x27;tests/client_ng1/todo/services/todo-dao_test.js&#x27;, &#x27;client/dev/todo/services/todo-dao_test.js&#x27;]
+      ];
+    }
+
+    this.generator.directory(&#x27;tasks/client/ng1&#x27;, &#x27;tasks/client&#x27;);
+
+    this.generator.template(&#x27;tasks/client/ng1/const.js&#x27;, &#x27;tasks/client/const.js&#x27;, {
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    this.generator.template(&#x27;tasks/client/ng1/build_css.js&#x27;, &#x27;tasks/client/build_css.js&#x27;, {
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    this.generator.template(&#x27;tasks/client/ng1/watch.js&#x27;, &#x27;tasks/client/watch.js&#x27;, {
+      secure: !!this.generator.secure,
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    yoUtils.directory(this.generator, _pathSrc, this.generator);
+    yoUtils.directory(this.generator, _pathTest, this.generator);
+
+    copyStyleForMainGenerator(this.generator, &#x27;client/dev/todo/styles/todo&#x27;);
+  }
+
+  copyComponent(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;ng1/component.js&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/components/${this.generator.name}.js`, {
+        nameCapitalized: utils.capitalizeFirst(this.generator.name),
+        name: this.generator.name,
+        feature: this.generator.options.feature,
+        appName: this.generator.appName
+    });
+
+    this.generator.template(_pathTemplate + &#x27;ng1/component.html&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/templates/${this.generator.name}.html`, {
+        name: this.generator.name
+    });
+
+    this.generator.template(_pathTemplate + &#x27;ng1/component.css&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/styles/${this.generator.name}.css`
+    );
+
+    this.generator.template(_pathTemplate + &#x27;ng1/component_test.js&#x27;,
+      `${this.testsPath + this.generator.options.feature}/components/${this.generator.name}_test.js`, {
+        name: this.generator.name,
+        nameLowerCase: this.generator.name.toLowerCase(),
+        appName: this.generator.appName
+    });
+  }
+
+  copyController(pathTemplate) {
+    let _pathTemplate = ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.angular.Angular2" id="apidoc.element.generator-ng-fullstack.angular.Angular2">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.angular.</span>Angular2
+        <span class="apidocSignatureSpan">(gen)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class Angular2 {
+  constructor(gen) {
+    this.generator = gen;
+    this.testsSeparated = gen &#x26;&#x26; gen.testsSeparated !== undefined &#x26;&#x26; typeof(gen.testsSeparated) === &#x22;boolean&#x22; ? gen.testsSeparated
+ : true;
+    this.testsPath = this.testsSeparated ? knownPaths.PATH_CLIENT_FEATURES_TEST : knownPaths.PATH_CLIENT_FEATURES;
+  }
+
+  copyClient() {
+    this.generator.directory(&#x27;tasks/client/ng2&#x27;, &#x27;tasks/client&#x27;);
+    this.generator.directory(&#x27;client/ng2&#x27;, &#x27;client&#x27;);
+    this.generator.template(&#x27;_karma.conf_ng2.js&#x27;, &#x27;karma.conf.js&#x27;, {testsSeparated: this.testsSeparated});
+    this.generator.template(&#x27;_karma-test-shim.js&#x27;, &#x27;karma-test-shim.js&#x27;);
+    this.generator.template(&#x27;_typings_ng2.json&#x27;, &#x27;typings.json&#x27;);
+    this.generator.template(&#x27;_tsconfig.json&#x27;, &#x27;tsconfig.json&#x27;);
+
+    if(this.testsSeparated) {
+      this.generator.directory(&#x27;tests/client_ng2&#x27;, &#x27;tests/client&#x27;);
+    } else {
+      let _pathTest = [
+        [&#x27;tests/client_ng2/todo/components/todo-cmp_test.ts&#x27;, &#x27;client/dev/todo/components/todo-cmp_test.ts&#x27;],
+        [&#x27;tests/client_ng2/todo/services/todo-service_test.ts&#x27;, &#x27;client/dev/todo/services/todo-service_test.ts&#x27;]
+      ];
+      yoUtils.directory(this.generator, _pathTest, this.generator);
+    }
+
+    if (this.generator.stack === &#x22;client&#x22;)  {
+      this.generator.template(&#x27;_ng2_systemjs_config_serving_from_root.js&#x27;, &#x27;client/dev/config.js&#x27;);
+    } else {
+      this.generator.template(&#x27;_ng2_systemjs_config_serving_node_modules.js&#x27;, &#x27;client/dev/config.js&#x27;);
+    }
+
+    this.generator.template(&#x27;tasks/client/ng2/const.js&#x27;, &#x27;tasks/client/const.js&#x27;, {
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    this.generator.template(&#x27;tasks/client/ng2/build_css.js&#x27;, &#x27;tasks/client/build_css.js&#x27;, {
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    this.generator.template(&#x27;tasks/client/ng2/watch.js&#x27;, &#x27;tasks/client/watch.js&#x27;, {
+      secure: !!this.generator.secure,
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    copyStyleForMainGenerator(this.generator, &#x27;client/dev/todo/styles/todo&#x27;);
+  }
+
+  copyComponent(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;ng2/component.ts&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/components/${this.generator.name}.ts`, {
+        nameCapitalized: utils.capitalizeFirst(this.generator.name),
+        name: this.generator.name,
+        feature: this.generator.options.feature
+    });
+
+    this.generator.template(_pathTemplate + &#x27;ng2/component.html&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/templates/${this.generator.name}.html`, {
+        name: this.generator.name
+    });
+
+    this.generator.template(_pathTemplate + &#x27;ng2/component.css&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/styles/${this.generator.name}.css`
+    );
+
+    this.generator.template(_pathTemplate + &#x27;ng2/component_test.ts&#x27;,
+      `${this.testsPath + this.generator.options.feature}/components/${this.generator.name}_test.ts`, {
+        name: utils.capitalizeFirst(this.generator.name),
+        nameLowerCase: this.generator.name.toLowerCase()
+    });
+  }
+
+  copyDirective(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;ng2/directive.ts&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/directives/${this.generator.name}.ts`, {
+        name: this.generator.name
+    });
+
+    this.generator.template(_pathTemplate + &#x27;ng2/directive_test.ts&#x27;,
+      `${this.testsPath + this.generator.options.feature}/directives/${this.generator.name}_test.ts`, {
+        name: this.generator.name
+    });
+  }
+
+
+  copyFactory(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;ng2/factory.ts&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/factory/${this.generator.name}.ts`, {
+        name: utils.capitalizeFirst(this.gener ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.angular.AngularFactory" id="apidoc.element.generator-ng-fullstack.angular.AngularFactory">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.angular.</span>AngularFactory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class AngularFactory {
+  static tokens() {
+    return {
+      NG1: &#x27;ng1&#x27;,
+      NG2: &#x27;ng2&#x27;
+    };
+  }
+
+  static build(token, gen) {
+    switch(token) {
+      case AngularFactory.tokens().NG1: return new Angular1(gen);
+      case AngularFactory.tokens().NG2: return new Angular2(gen);
+      default: throw new Error(`Invalid Angular token: ${token}.`);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.aurelia" id="apidoc.module.generator-ng-fullstack.aurelia">module generator-ng-fullstack.aurelia</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.aurelia.Aurelia1" id="apidoc.element.generator-ng-fullstack.aurelia.Aurelia1">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.aurelia.</span>Aurelia1
+        <span class="apidocSignatureSpan">(gen)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class Aurelia1 {
+  constructor(gen) {
+    this.generator = gen;
+    this.testsSeparated = gen &#x26;&#x26; gen.testsSeparated !== undefined &#x26;&#x26; typeof(gen.testsSeparated) === &#x22;boolean&#x22; ? gen.testsSeparated
+ : true;
+    this.testsPath = this.testsSeparated ? knownPaths.PATH_CLIENT_FEATURES_TEST : knownPaths.PATH_CLIENT_FEATURES;
+  }
+
+  copyClient() {
+    this.generator.directory(&#x27;tasks/client/aurelia1&#x27;, &#x27;tasks/client&#x27;);
+    this.generator.directory(&#x27;client/aurelia1&#x27;, &#x27;client&#x27;);
+    this.generator.template(&#x27;_karma.conf_aurelia1.js&#x27;, &#x27;karma.conf.js&#x27;, {
+      testsSeparated: this.testsSeparated
+    });
+
+    if(this.testsSeparated) {
+      this.generator.directory(&#x27;tests/client_aurelia1&#x27;, &#x27;tests/client&#x27;);
+    } else {
+      let _pathTest = [
+        [&#x27;tests/client_aurelia1/todo/components/todo-cmp_test.js&#x27;, &#x27;client/dev/todo/components/todo-cmp_test.js&#x27;],
+        [&#x27;tests/client_aurelia1/todo/models/todo-model_test.js&#x27;, &#x27;client/dev/todo/models/todo-model_test.js&#x27;],
+        [&#x27;tests/client_aurelia1/todo/services/todo-service_test.js&#x27;, &#x27;client/dev/todo/services/todo-service_test.js&#x27;]
+      ];
+
+      yoUtils.directory(this.generator, _pathTest, this.generator);
+    }
+
+    if (this.generator.stack === &#x22;client&#x22;)  {
+      this.generator.template(&#x27;_aurelia_jspm_config_serving_from_root.js&#x27;, &#x27;jspm.config.js&#x27;);
+    } else {
+      this.generator.template(&#x27;_aurelia_jspm_config_serving_from_jspm_packages.js&#x27;, &#x27;jspm.config.js&#x27;);
+    }
+
+    this.generator.template(&#x27;tasks/client/aurelia1/const.js&#x27;, &#x27;tasks/client/const.js&#x27;, {
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    this.generator.template(&#x27;tasks/client/aurelia1/build_css.js&#x27;, &#x27;tasks/client/build_css.js&#x27;, {
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+
+    this.generator.template(&#x27;tasks/client/aurelia1/watch.js&#x27;, &#x27;tasks/client/watch.js&#x27;, {
+      secure: !!this.generator.secure,
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    copyStyleForMainGenerator(this.generator, &#x27;client/dev/todo/styles/todo&#x27;);
+  }
+
+  copyComponent(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;aurelia1/component.js&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/components/${this.generator.name}.js`, {
+        nameCapitalized: utils.capitalizeFirst(this.generator.name),
+        name: this.generator.name,
+        feature: this.generator.options.feature
+    });
+
+    this.generator.template(_pathTemplate + &#x27;aurelia1/component.html&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/components/${this.generator.name}.html`, {
+        name: this.generator.name
+      }
+    );
+
+    this.generator.template(_pathTemplate + &#x27;aurelia1/component.css&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/styles/${this.generator.name}.css`
+    );
+
+    this.generator.template(_pathTemplate + &#x27;aurelia1/component_test.js&#x27;,
+      `${this.testsPath + this.generator.options.feature}/components/${this.generator.name}_test.js`, {
+        name: utils.capitalizeFirst(this.generator.name),
+        nameLowerCase: this.generator.name.toLowerCase()
+    });
+  }
+
+  copyDirective(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;aurelia1/directive.js&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/directives/${this.generator.name}.js`, {
+        name: this.generator.name
+    });
+
+    this.generator.template(_pathTemplate + &#x27;aurelia1/directive_test.js&#x27;,
+      `${this.testsPath + this.generator.options.feature}/directives/${this.generator.name}_test.js`, {
+        name: this.generator.name
+    });
+  }
+
+
+  copyFactory(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;aurelia1/factory.js&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/factory/${this.generator.name}.js`, {
+        name: utils.capitalizeFirst(th ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.aurelia.AureliaFactory" id="apidoc.element.generator-ng-fullstack.aurelia.AureliaFactory">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.aurelia.</span>AureliaFactory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class AureliaFactory {
+  static tokens() {
+    return {
+      AURELIA1: &#x27;aurelia1&#x27;
+    };
+  }
+
+  static build(token, gen) {
+    switch(token) {
+      case AureliaFactory.tokens().AURELIA1: return new Aurelia1(gen);
+      default: throw new Error(`Invalid Aurelia token: ${token}.`);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.client_factory" id="apidoc.module.generator-ng-fullstack.client_factory">module generator-ng-fullstack.client_factory</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.client_factory.ClientFactory" id="apidoc.element.generator-ng-fullstack.client_factory.ClientFactory">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.client_factory.</span>ClientFactory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ClientFactory {
+  static tokens() {
+    return {
+      ANGULAR: &#x27;angular&#x27;,
+      AURELIA: &#x27;aurelia&#x27;,
+      VUE: &#x27;vue&#x27;
+    };
+  }
+
+  static create(client, token, gen) {
+    switch(client) {
+        case ClientFactory.tokens().ANGULAR: return AngularFactory.build(token, gen);
+        case ClientFactory.tokens().AURELIA: return AureliaFactory.build(token, gen);
+        case ClientFactory.tokens().VUE: return VueFactory.build(token, gen);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.errors" id="apidoc.module.generator-ng-fullstack.errors">module generator-ng-fullstack.errors</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.errors.FeatureMissingError" id="apidoc.element.generator-ng-fullstack.errors.FeatureMissingError">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.errors.</span>FeatureMissingError
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class FeatureMissingError extends ExtendableError {
+  constructor() {
+    super(&#x27;Feature is needed. Do it like this: --feature something-here&#x27;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.errors.ModuleDoesntImplementError" id="apidoc.element.generator-ng-fullstack.errors.ModuleDoesntImplementError">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.errors.</span>ModuleDoesntImplementError
+        <span class="apidocSignatureSpan">(module, subGenerator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ModuleDoesntImplementError extends ExtendableError {
+  constructor(module, subGenerator) {
+    super(`${module} doesn&#x27;t implement ${subGenerator}.`);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.generator" id="apidoc.module.generator-ng-fullstack.generator">module generator-ng-fullstack.generator</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.generator.MainGenerator" id="apidoc.element.generator-ng-fullstack.generator.MainGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.generator.</span>MainGenerator
+        <span class="apidocSignatureSpan">(gen)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class MainGenerator {
+  constructor(gen) {
+    this.wrapper = gen;
+  }
+
+  sayHello() {
+    this.wrapper.log(yosay(&#x27;Welcome to the terrific &#x27; + chalk.green(&#x27;NgFullstack&#x27;) + &#x27; generator!&#x27;));
+  }
+
+  writing() {
+      let _app = {app: this.wrapper.appName};
+      let _user = {
+        username: this.wrapper.username,
+        userEmail: this.wrapper.userEmail,
+        userNameSpace: this.wrapper.userNameSpace
+      };
+      let _repoHostUrl = {repoHostUrl: this.wrapper.repoHostUrl};
+      let _server = this.wrapper.server;
+      let _testsSeparated = this.wrapper.testsSeparated;
+      let _transpilerServer = this.wrapper.transpilerServer;
+      let _client = this.wrapper.client;
+      let _copiesServer = (this.wrapper.stack === &#x22;fullstack&#x22;) || (this.wrapper.stack === &#x22;server&#x22;);
+      let _copiesClient = (this.wrapper.stack === &#x22;fullstack&#x22;) || (this.wrapper.stack === &#x22;client&#x22;);
+      let _clientOnly = this.wrapper.stack === &#x22;client&#x22;;
+      let _serverOnly = this.wrapper.stack === &#x22;server&#x22;;
+      let _secure = this.wrapper.secure;
+      let _usesTypescript = (_transpilerServer === &#x22;typescript&#x22;) || (_client === &#x22;ng2&#x22;);
+      let _stylePreprocessor = this.wrapper.stylePreprocessor;
+
+      this.wrapper.template(&#x27;_README.md&#x27;, &#x27;README.md&#x27;, {
+        app: _app.app,
+        userNameSpace: _user.userNameSpace
+      });
+
+      this.wrapper.template(&#x27;_package.json&#x27;, &#x27;package.json&#x27;, {
+        app: _app.app,
+        username: _user.username,
+        repoHostUrl: _repoHostUrl.repoHostUrl,
+        userNameSpace: _user.userNameSpace,
+        usesTypescript: _usesTypescript,
+        client: _client,
+        secure: _secure,
+        clientOnly: _clientOnly,
+        nodeWebFrameworkServer: this.wrapper.nodeWebFrameworkServer,
+        testsSeparated: _testsSeparated,
+        stylePreprocessor: _stylePreprocessor,
+        server: _server
+      });
+
+      this.wrapper.template(&#x27;_gulpfile.babel.js&#x27;, &#x27;gulpfile.babel.js&#x27;, _app);
+      this.wrapper.template(&#x27;_karma.conf.js&#x27;, &#x27;karma.conf.js&#x27;, {
+        app: _app.app,
+        testsSeparated: _testsSeparated
+      });
+      this.wrapper.template(&#x27;_protractor.conf.js&#x27;, &#x27;protractor.conf.js&#x27;, _app);
+      this.wrapper.template(&#x27;_newrelic.js&#x27;, &#x27;newrelic.js&#x27;, _app);
+      this.wrapper.template(&#x27;_procfile.txt&#x27;, &#x27;procfile.txt&#x27;, _app);
+      this.wrapper.template(&#x27;_.bowerrc&#x27;, &#x27;.bowerrc&#x27;);
+      this.wrapper.template(&#x27;_.travis.yml&#x27;, &#x27;.travis.yml&#x27;, {
+        typescript: _usesTypescript
+      });
+      this.wrapper.template(&#x27;_.gitignore&#x27;, &#x27;.gitignore&#x27;);
+      this.wrapper.template(&#x27;_.editorconfig&#x27;, &#x27;.editorconfig&#x27;);
+      this.wrapper.template(&#x27;_.jshintrc&#x27;,&#x27;.jshintrc&#x27;);
+      this.wrapper.template(&#x27;_.babelrc&#x27;, &#x27;.babelrc&#x27;);
+      this.wrapper.template(&#x27;tasks/index.js&#x27;, &#x27;tasks/index.js&#x27;, {
+        nodeServer: _server === ServerFactory.tokens().NODE &#x26;&#x26; !_clientOnly,
+        serverOnly: _serverOnly
+      });
+
+      this.wrapper.directory(&#x27;tests/e2e&#x27;, &#x27;tests/e2e&#x27;);
+
+      if (!_serverOnly) {
+        this.wrapper.template(&#x27;_.alivrc&#x27;, &#x27;.alivrc&#x27;, {
+          secure: _secure
+        });
+      }
+
+      if (_secure &#x26;&#x26; !_clientOnly) {
+        this.wrapper.directory(&#x27;cert&#x27;, &#x27;server/cert&#x27;);
+      }
+
+      if (_copiesClient) {
+        if (_client === AngularFactory.tokens().NG1) {
+          this.wrapper.template(&#x27;_bower.json&#x27;, &#x27;bower.json&#x27;, {
+            app: _app.app,
+            username: _user.username,
+            userEmail: _user.userEmail,
+            repoHostUrl: _repoHostUrl.repoHostUrl,
+            userNameSpace: _user.userNameSpace
+          });
+        }
+
+        if (/^ng/.test(_client)) {
+          ClientFactory.create(ClientFactory.tokens().ANGULAR, _client, this.wrapper).copyClient();
+        }
+
+        if (/^vue/.test(_client)) {
+          ClientFactory.create(ClientFactory.tokens().VUE, _client, this.wrapper).copyClient();
+        }
+
+        if (/^aurelia/.test(_client)) {
+          ClientFactory.create(ClientFactory.tokens().AURELIA, _client, this.wrapper).copyClient();
+        }
+      }
+
+      if (_copiesServer) {
+        ServerFactory.create(_server, this.wrapper).copyForMainGenerator();
+      }
+  }
+
+  install() ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.go_base" id="apidoc.module.generator-ng-fullstack.go_base">module generator-ng-fullstack.go_base</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.go_base.GoBase" id="apidoc.element.generator-ng-fullstack.go_base.GoBase">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.go_base.</span>GoBase
+        <span class="apidocSignatureSpan">(generator, webFramework)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class GoBase {
+  constructor(generator, webFramework) {
+    this.wrapper = generator;
+    this.webFramework = webFramework;
+  }
+
+  copyFiles() {
+    let _featureWithoutTrailingSlash = this.wrapper.feature.replace(&#x27;/&#x27;, &#x27;&#x27;);
+    let gen = basePath(this.wrapper);
+
+    this.wrapper.template(&#x27;go/&#x27;+this.webFramework+&#x27;/endpoint.route.go&#x27;, `${gen.route}.go`, {
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      userNameSpace: this.wrapper.userNameSpace,
+      repoHostUrl: this.wrapper.repoHostUrl,
+      appName: this.wrapper.appName,
+      feature: _featureWithoutTrailingSlash
+    });
+
+    this.wrapper.template(&#x27;go/&#x27;+this.webFramework+&#x27;/endpoint.controller.go&#x27;, `${gen.controller}.go`, {
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      userNameSpace: this.wrapper.userNameSpace,
+      repoHostUrl: this.wrapper.repoHostUrl,
+      appName: this.wrapper.appName,
+      feature: _featureWithoutTrailingSlash
+    });
+
+    this.wrapper.template(&#x27;go/&#x27;+this.webFramework+&#x27;/endpoint.dao.go&#x27;, `${gen.dao}.go`, {
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      userNameSpace: this.wrapper.userNameSpace,
+      repoHostUrl: this.wrapper.repoHostUrl,
+      appName: this.wrapper.appName,
+      feature: _featureWithoutTrailingSlash
+    });
+
+    this.wrapper.template(&#x27;go/&#x27;+this.webFramework+&#x27;/endpoint.model.go&#x27;, `${gen.model}.go`, {
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      userNameSpace: this.wrapper.userNameSpace,
+      repoHostUrl: this.wrapper.repoHostUrl,
+      appName: this.wrapper.appName,
+      feature: _featureWithoutTrailingSlash
+    });
+
+    this.wrapper.template(&#x27;go/&#x27;+this.webFramework+&#x27;/endpoint.dao_test.go&#x27;, `${gen.daoTest}.go`, {
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      userNameSpace: this.wrapper.userNameSpace,
+      repoHostUrl: this.wrapper.repoHostUrl,
+      appName: this.wrapper.appName,
+      feature: _featureWithoutTrailingSlash
+    });
+
+    this.wrapper.template(&#x27;go/&#x27;+this.webFramework+&#x27;/endpoint.model_test.go&#x27;, `${gen.modelTest}.go`, {
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      userNameSpace: this.wrapper.userNameSpace,
+      repoHostUrl: this.wrapper.repoHostUrl,
+      appName: this.wrapper.appName,
+      feature: _featureWithoutTrailingSlash
+    });
+
+    this.wrapper.template(&#x27;go/&#x27;+this.webFramework+&#x27;/endpoint.controller_test.go&#x27;, `${gen.controllerTest}.go`, {
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      userNameSpace: this.wrapper.userNameSpace,
+      repoHostUrl: this.wrapper.repoHostUrl,
+      appName: this.wrapper.appName,
+      feature: _featureWithoutTrailingSlash
+    });
+
+    this.wrapper.template(&#x27;go/&#x27;+this.webFramework+&#x27;/endpoint.route_test.go&#x27;, `${gen.routeTest}.go`, {
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      userNameSpace: this.wrapper.userNameSpace,
+      repoHostUrl: this.wrapper.repoHostUrl,
+      appName: this.wrapper.appName,
+      feature: _featureWithoutTrailingSlash
+    });
+  }
+
+  copyForMainGenerator() {
+    this.wrapper.differentStaticServer = !!this.wrapper.differentStaticServer || (this.wrapper.stack === &#x22;server&#x22;);
+
+    if (this.wrapper.secure) {
+      this.wrapper.template(&#x27;server/go/&#x27;+this.webFramework+&#x27;/main_http2.go&#x27;, &#x27;server/main.go&#x27;, {
+        appName: this.wrapper.appName,
+        userNameSpace: this.wrapper.userNameSpace,
+        repoHostUrl: this.wrapper.repoHostUrl,
+        differentStaticServer: !!this.wrapper.differentStaticServer
+      });
+    }
+    else {
+      this.wrapper.template(&#x27;server/go/&#x27;+this.webFramework+&#x27;/main.go&#x27;, &#x27;server/main.go&#x27;, {
+        appName: this.wrapper.appName,
+        userNameSpace: this.wrapper.userNameSpace,
+        repoHostUrl: this.wrapper.repoHostUrl,
+        differentStaticServer: !!this.wrapper.differentStaticServer
+      });
+    }
+
+    let _paths = [
+      [&#x27;server/go/&#x27;+this.webFramework+&#x27;/routes/rou ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.go_echo" id="apidoc.module.generator-ng-fullstack.go_echo">module generator-ng-fullstack.go_echo</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.go_echo.GoEcho" id="apidoc.element.generator-ng-fullstack.go_echo.GoEcho">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.go_echo.</span>GoEcho
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class GoEcho extends GoBase {
+  constructor(generator) {
+    super(generator, SERVER_TOKEN);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.go_factory" id="apidoc.module.generator-ng-fullstack.go_factory">module generator-ng-fullstack.go_factory</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.go_factory.GoFactory" id="apidoc.element.generator-ng-fullstack.go_factory.GoFactory">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.go_factory.</span>GoFactory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class GoFactory {
+  static tokensWebFramework() {
+    return {
+      ECHO: &#x27;echo&#x27;,
+      GIN: &#x27;gin&#x27;
+    };
+  }
+
+  static build(generator) {
+    switch(generator.goWebFrameworkServer) {
+      case GoFactory.tokensWebFramework().ECHO: return new GoEcho(generator);
+      case GoFactory.tokensWebFramework().GIN: return new GoGin(generator);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.go_gin" id="apidoc.module.generator-ng-fullstack.go_gin">module generator-ng-fullstack.go_gin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.go_gin.GoGin" id="apidoc.element.generator-ng-fullstack.go_gin.GoGin">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.go_gin.</span>GoGin
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class GoGin extends GoBase {
+  constructor(generator) {
+    super(generator, SERVER_TOKEN);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.node_base" id="apidoc.module.generator-ng-fullstack.node_base">module generator-ng-fullstack.node_base</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.node_base.NodeBaseBabel" id="apidoc.element.generator-ng-fullstack.node_base.NodeBaseBabel">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.node_base.</span>NodeBaseBabel
+        <span class="apidocSignatureSpan">(generator, webFramework)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NodeBaseBabel {
+  constructor(generator, webFramework) {
+    this.wrapper = generator;
+    this.webFramework = webFramework;
+  }
+
+  copyFiles() {
+    let gen = basePath(this.wrapper);
+    const testsSeparated = this.wrapper.testsSeparated !== undefined ? this.wrapper.testsSeparated : true;
+    const TESTS = testsSeparated ? &#x27;Separate&#x27; : &#x27;Together&#x27;;
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/babel/endpoint.route.js&#x27;, `${gen.route}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/babel/endpoint.controller.js&#x27;, `${gen.controller}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/babel/endpoint.dao.js&#x27;, `${gen.dao}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/babel/endpoint.model.js&#x27;, `${gen.model}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/babel/endpoint.route_test.js&#x27;, `${gen[`routeTest${TESTS}`]}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/babel/endpoint.controller_test.js&#x27;, `${gen[`controllerTest${TESTS}`]}.
+js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/babel/endpoint.dao_test.js&#x27;, `${gen[`daoTest${TESTS}`]}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/babel/endpoint.model_test.js&#x27;, `${gen[`modelTest${TESTS}`]}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+  }
+
+  copyForMainGenerator() {
+    this.wrapper.differentStaticServer = !!this.wrapper.differentStaticServer || (this.wrapper.stack === &#x22;server&#x22;);
+
+    this.wrapper.template(&#x27;index_babel.js&#x27;, &#x27;server/index.js&#x27;);
+    this.wrapper.directory(&#x27;tasks/server&#x27;, &#x27;tasks/server&#x27;);
+
+    if(this.wrapper.testsSeparated) {
+      this.wrapper.directory(&#x27;tests/server&#x27;, &#x27;tests/server&#x27;);
+    }
+
+    if (this.wrapper.secure) {
+      this.wrapper.template(&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_babel/server_http2.js&#x27;, &#x27;
+server/server.js&#x27;, {
+        differentStaticServer: !!this.wrapper.differentStaticServer
+      });
+    }
+    else {
+      this.wrapper.template(&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_babel/server.js&#x27;, &#x27;server
+/server.js&#x27;, {
+        differentStaticServer: !!this.wrapper.differentStaticServer
+      });
+    }
+
+    let _paths = [
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_babel/routes/index.js&#x27;, &#x27;server/routes/index
+.js&#x27;],
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_babel/constants/db.json&#x27;, &#x27;server/constants/
+db.json&#x27;],
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_babel/config/db.conf.js&#x27;, &#x27;server/config/db.
+conf.js&#x27;],
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_babel/config/routes.conf.js&#x27;, &#x27;server/config
+/routes.conf.js&#x27;],
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_babel ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.node_base.NodeBaseStandard" id="apidoc.element.generator-ng-fullstack.node_base.NodeBaseStandard">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.node_base.</span>NodeBaseStandard
+        <span class="apidocSignatureSpan">(generator, webFramework)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NodeBaseStandard {
+  constructor(generator, webFramework) {
+    this.wrapper = generator;
+    this.webFramework = webFramework;
+  }
+
+  copyFiles() {
+    let gen = basePath(this.wrapper);
+    const testsSeparated = this.wrapper.testsSeparated !== undefined ? this.wrapper.testsSeparated : true;
+    const TESTS = testsSeparated ? &#x27;Separate&#x27; : &#x27;Together&#x27;;
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/no_transpiler/endpoint.route.js&#x27;, `${gen.route}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/no_transpiler/endpoint.controller.js&#x27;, `${gen.controller}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/no_transpiler/endpoint.dao.js&#x27;, `${gen.dao}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/no_transpiler/endpoint.model.js&#x27;, `${gen.model}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/no_transpiler/endpoint.route_test.js&#x27;, `${gen[`routeTest${TESTS}`]}.js
+`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/no_transpiler/endpoint.controller_test.js&#x27;, `${gen[`controllerTest${TESTS
+}`]}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/no_transpiler/endpoint.dao_test.js&#x27;, `${gen[`daoTest${TESTS}`]}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/no_transpiler/endpoint.model_test.js&#x27;, `${gen[`modelTest${TESTS}`]}.js
+`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+  }
+
+  copyForMainGenerator() {
+    this.wrapper.differentStaticServer = !!this.wrapper.differentStaticServer || (this.wrapper.stack === &#x22;server&#x22;);
+
+    this.wrapper.template(&#x27;index_node.js&#x27;, &#x27;server/index.js&#x27;);
+    this.wrapper.directory(&#x27;tasks/server&#x27;, &#x27;tasks/server&#x27;);
+
+    if(this.wrapper.testsSeparated) {
+      this.wrapper.directory(&#x27;tests/server&#x27;, &#x27;tests/server&#x27;);
+    }
+
+    if (this.wrapper.secure) {
+      this.wrapper.template(&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;/server_http2.js&#x27;, &#x27;server
+/server.js&#x27;, {
+        differentStaticServer: !!this.wrapper.differentStaticServer
+      });
+    }
+    else {
+      this.wrapper.template(&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;/server.js&#x27;, &#x27;server/server
+.js&#x27;, {
+        differentStaticServer: !!this.wrapper.differentStaticServer
+      });
+    }
+
+    let _paths = [
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;/routes/index.js&#x27;, &#x27;server/routes/index.js&#x27;],
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;/constants/db.json&#x27;, &#x27;server/constants/db.json
+&#x27;],
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;/config/db.conf.js&#x27;, &#x27;server/config/db.conf.js
+&#x27;],
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;/config/routes.conf.js&#x27;, &#x27;server/config/routes
+.conf.js&#x27;],
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_ ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.node_base.NodeBaseTypescript" id="apidoc.element.generator-ng-fullstack.node_base.NodeBaseTypescript">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.node_base.</span>NodeBaseTypescript
+        <span class="apidocSignatureSpan">(generator, webFramework)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NodeBaseTypescript {
+  constructor(generator, webFramework) {
+    this.wrapper = generator;
+    this.webFramework = webFramework;
+  }
+
+  copyFiles() {
+    let gen = basePath(this.wrapper);
+    const testsSeparated = this.wrapper.testsSeparated !== undefined ? this.wrapper.testsSeparated : true;
+    const TESTS = testsSeparated ? &#x27;Separate&#x27; : &#x27;Together&#x27;;
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/typescript/endpoint.route.ts&#x27;, `${gen.route}.ts`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/typescript/endpoint.controller.ts&#x27;, `${gen.controller}.ts`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/typescript/endpoint.dao.ts&#x27;, `${gen.dao}.ts`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/typescript/endpoint.model.ts&#x27;, `${gen.model}.ts`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase()
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/typescript/endpoint.route_test.js&#x27;, `${gen[`routeTest${TESTS}`]}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/typescript/endpoint.controller_test.js&#x27;, `${gen[`controllerTest${TESTS
+}`]}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/typescript/endpoint.dao_test.js&#x27;, `${gen[`daoTest${TESTS}`]}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+
+    this.wrapper.template(&#x27;node/&#x27; + this.webFramework + &#x27;/typescript/endpoint.model_test.js&#x27;, `${gen[`modelTest${TESTS}`]}.js`, {
+      feature: this.wrapper.feature,
+      name: this.wrapper.name,
+      nameLowerCase: this.wrapper.name.toLowerCase(),
+      testsSeparated: this.wrapper.testsSeparated
+    });
+  }
+
+  copyForMainGenerator() {
+    this.wrapper.differentStaticServer = !!this.wrapper.differentStaticServer || (this.wrapper.stack === &#x22;server&#x22;);
+
+    this.wrapper.template(&#x27;index_tsc.js&#x27;, &#x27;server/index.js&#x27;);
+    this.wrapper.template(&#x27;_tsconfig.json&#x27;, &#x27;tsconfig.json&#x27;);
+    this.wrapper.template(&#x27;_typings_ng2_and_tsc_server.json&#x27;, &#x27;typings.json&#x27;);
+    this.wrapper.directory(&#x27;tasks/server&#x27;, &#x27;tasks/server&#x27;);
+
+    if (this.wrapper.testsSeparated) {
+      this.wrapper.directory(&#x27;tests/server&#x27;, &#x27;tests/server&#x27;);
+    }
+
+    if (this.wrapper.secure) {
+      this.wrapper.template(&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_typescript/server_http2
+.ts&#x27;, &#x27;server/server.ts&#x27;, {
+        differentStaticServer: !!this.wrapper.differentStaticServer
+      });
+    }
+    else {
+      this.wrapper.template(&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_typescript/server.ts&#x27;, &#x27;
+server/server.ts&#x27;, {
+        differentStaticServer: !!this.wrapper.differentStaticServer
+      });
+    }
+
+    let _paths = [
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_typescript/routes/index.ts&#x27;, &#x27;server/routes/
+index.ts&#x27;],
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_typescript/constants/db.json&#x27;, &#x27;server/constants
+/db.json&#x27;],
+      [&#x27;server/node/&#x27; + this.webFramework + &#x27;/server_node_&#x27; + this.webFramework + &#x27;_typescript/config/db.conf.ts&#x27;, &#x27;server/config
+/db.conf.ts&#x27;],
+      [&#x27;server/node/&#x27; + thi ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.node_express" id="apidoc.module.generator-ng-fullstack.node_express">module generator-ng-fullstack.node_express</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.node_express.NodeExpressBabel" id="apidoc.element.generator-ng-fullstack.node_express.NodeExpressBabel">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.node_express.</span>NodeExpressBabel
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NodeExpressBabel extends NodeBaseBabel {
+  constructor(generator) {
+    super(generator, SERVER_TOKEN);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.node_express.NodeExpressStandard" id="apidoc.element.generator-ng-fullstack.node_express.NodeExpressStandard">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.node_express.</span>NodeExpressStandard
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NodeExpressStandard extends NodeBaseStandard {
+  constructor(generator) {
+    super(generator, SERVER_TOKEN);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.node_express.NodeExpressTypescript" id="apidoc.element.generator-ng-fullstack.node_express.NodeExpressTypescript">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.node_express.</span>NodeExpressTypescript
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NodeExpressTypescript extends NodeBaseTypescript {
+  constructor(generator) {
+    super(generator, SERVER_TOKEN);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.node_factory" id="apidoc.module.generator-ng-fullstack.node_factory">module generator-ng-fullstack.node_factory</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.node_factory.NodeFactory" id="apidoc.element.generator-ng-fullstack.node_factory.NodeFactory">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.node_factory.</span>NodeFactory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NodeFactory {
+  static tokensCompiler() {
+    return {
+      NODE: &#x22;node&#x22;,
+      BABEL: &#x22;babel&#x22;,
+      TYPESCRIPT: &#x22;typescript&#x22;
+    };
+  }
+
+  static tokensWebFramework() {
+    return {
+      EXPRESS: &#x22;express&#x22;,
+      KOA: &#x22;koa&#x22;
+    };
+  }
+
+  static build(generator) {
+    let _isKoa = generator.nodeWebFrameworkServer === NodeFactory.tokensWebFramework().KOA;
+    let _isExpress = generator.nodeWebFrameworkServer === NodeFactory.tokensWebFramework().EXPRESS;
+    let _isNotInformed = generator.nodeWebFrameworkServer == undefined;
+
+    if (_isKoa) {
+      switch(generator.transpilerServer) {
+        case NodeFactory.tokensCompiler().NODE: return new NodeKoaStandard(generator);
+        case NodeFactory.tokensCompiler().BABEL: return new NodeKoaBabel(generator);
+        case NodeFactory.tokensCompiler().TYPESCRIPT: return new NodeKoaTypescript(generator);
+      }
+    }
+
+    if (_isExpress || _isNotInformed) {
+      switch(generator.transpilerServer) {
+        case NodeFactory.tokensCompiler().NODE: return new NodeExpressStandard(generator);
+        case NodeFactory.tokensCompiler().BABEL: return new NodeExpressBabel(generator);
+        case NodeFactory.tokensCompiler().TYPESCRIPT: return new NodeExpressTypescript(generator);
+      }
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.node_koa" id="apidoc.module.generator-ng-fullstack.node_koa">module generator-ng-fullstack.node_koa</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.node_koa.NodeKoaBabel" id="apidoc.element.generator-ng-fullstack.node_koa.NodeKoaBabel">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.node_koa.</span>NodeKoaBabel
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NodeKoaBabel extends NodeBaseBabel {
+  constructor(generator) {
+    super(generator, SERVER_TOKEN);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.node_koa.NodeKoaStandard" id="apidoc.element.generator-ng-fullstack.node_koa.NodeKoaStandard">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.node_koa.</span>NodeKoaStandard
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NodeKoaStandard extends NodeBaseStandard {
+  constructor(generator) {
+    super(generator, SERVER_TOKEN);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.node_koa.NodeKoaTypescript" id="apidoc.element.generator-ng-fullstack.node_koa.NodeKoaTypescript">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.node_koa.</span>NodeKoaTypescript
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class NodeKoaTypescript extends NodeBaseTypescript {
+  constructor(generator) {
+    super(generator, SERVER_TOKEN);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.options_parser" id="apidoc.module.generator-ng-fullstack.options_parser">module generator-ng-fullstack.options_parser</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.options_parser.getFeature" id="apidoc.element.generator-ng-fullstack.options_parser.getFeature">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.options_parser.</span>getFeature
+        <span class="apidocSignatureSpan">(opt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(opt) =&#x3e; {
+    return opt &#x26;&#x26; opt.feature ? opt.feature + &#x27;/&#x27; : &#x27;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  required: true,
+  type: String,
+  desc: &#x27;component&#x27;
+});
+  }
+
+  writing() {
+let _feature = optionsParser.<span class="apidocCodeKeywordSpan">getFeature</span>(this.wrapper.options);
+let _client = this.wrapper.client;
+
+if (!_feature.length) {
+  throw new FeatureMissingError();
+}
+
+if (_client === AngularFactory.tokens().NG1) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.options_parser.isClientOnly" id="apidoc.element.generator-ng-fullstack.options_parser.isClientOnly">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.options_parser.</span>isClientOnly
+        <span class="apidocSignatureSpan">(opt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(opt) =&#x3e; {
+    return opt ? !!opt.clientOnly : false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.options_parser.isServerOnly" id="apidoc.element.generator-ng-fullstack.options_parser.isServerOnly">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.options_parser.</span>isServerOnly
+        <span class="apidocSignatureSpan">(opt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(opt) =&#x3e; {
+    return opt ? !!opt.serverOnly : false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.server_factory" id="apidoc.module.generator-ng-fullstack.server_factory">module generator-ng-fullstack.server_factory</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.server_factory.ServerFactory" id="apidoc.element.generator-ng-fullstack.server_factory.ServerFactory">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.server_factory.</span>ServerFactory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ServerFactory {
+  static tokens() {
+    return {
+      NODE: &#x27;node&#x27;,
+      GO: &#x27;go&#x27;
+    };
+  }
+
+  static create(token, gen) {
+    switch(token) {
+      case ServerFactory.tokens().NODE: return NodeFactory.build(gen);
+      case ServerFactory.tokens().GO: return GoFactory.build(gen);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.style" id="apidoc.module.generator-ng-fullstack.style">module generator-ng-fullstack.style</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.style.copyStyleForMainGenerator" id="apidoc.element.generator-ng-fullstack.style.copyStyleForMainGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.style.</span>copyStyleForMainGenerator
+        <span class="apidocSignatureSpan">(gen, dest)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">copyStyleForMainGenerator = function (gen, dest) {
+  let _ext = _getExt(gen);
+
+  gen.template(&#x27;client/_styles/todo&#x27; + _ext, dest + _ext);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.style.copyStyleForSubGenerator" id="apidoc.element.generator-ng-fullstack.style.copyStyleForSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.style.</span>copyStyleForSubGenerator
+        <span class="apidocSignatureSpan">(gen, path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">copyStyleForSubGenerator = function (gen, path) {
+  let _pathTemplate = path || &#x27;&#x27;;
+  let _ext = _getExt(gen);
+
+  gen.template(`${_pathTemplate}style${_ext}`,
+               `${knownPaths.PATH_CLIENT_FEATURES + gen.options.feature}/styles/${gen.name}${_ext}`
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.style.normalizeStylePreprocessor" id="apidoc.element.generator-ng-fullstack.style.normalizeStylePreprocessor">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.style.</span>normalizeStylePreprocessor
+        <span class="apidocSignatureSpan">(stylePreprocessor)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">normalizeStylePreprocessor = function (stylePreprocessor) {
+  return (!!stylePreprocessor &#x26;&#x26; stylePreprocessor !== &#x22;none&#x22;) ? stylePreprocessor : undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_component" id="apidoc.module.generator-ng-fullstack.sub_generators_component">module generator-ng-fullstack.sub_generators_component</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_component.ComponentSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_component.ComponentSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_component.</span>ComponentSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ComponentSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;component&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if (_client === AngularFactory.tokens().NG1) {
+      return AngularFactory.build(_client, this.wrapper).copyComponent();
+    }
+
+    if (_client === AngularFactory.tokens().NG2) {
+      return AngularFactory.build(_client, this.wrapper).copyComponent();
+    }
+
+    if (_client === VueFactory.tokens().VUE2) {
+      return VueFactory.build(_client, this.wrapper).copyComponent();
+    }
+
+    if (_client === AureliaFactory.tokens().AURELIA1) {
+      return AureliaFactory.build(_client, this.wrapper).copyComponent();
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_controller" id="apidoc.module.generator-ng-fullstack.sub_generators_controller">module generator-ng-fullstack.sub_generators_controller</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_controller.ControllerSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_controller.ControllerSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_controller.</span>ControllerSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ControllerSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;controller_client&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if (_client !== AngularFactory.tokens().NG1) {
+      throw new ModuleDoesntImplementError(_client, &#x27;controller&#x27;);
+    }
+
+    AngularFactory.build(AngularFactory.tokens().NG1, this.wrapper).copyController();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_decorator" id="apidoc.module.generator-ng-fullstack.sub_generators_decorator">module generator-ng-fullstack.sub_generators_decorator</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_decorator.DecoratorSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_decorator.DecoratorSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_decorator.</span>DecoratorSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class DecoratorSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;decorator&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if (_client !== AngularFactory.tokens().NG1) {
+      throw new ModuleDoesntImplementError(_client, &#x27;decorator&#x27;);
+    }
+
+    AngularFactory.build(AngularFactory.tokens().NG1, this.wrapper).copyDecorator();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_directive" id="apidoc.module.generator-ng-fullstack.sub_generators_directive">module generator-ng-fullstack.sub_generators_directive</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_directive.DirectiveSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_directive.DirectiveSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_directive.</span>DirectiveSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class DirectiveSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;directive&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if ((_client === AngularFactory.tokens().NG1) || (_client === AngularFactory.tokens().NG2)) {
+      return AngularFactory.build(this.wrapper.client, this.wrapper).copyDirective();
+    }
+
+    if (_client === VueFactory.tokens().VUE2) {
+      return VueFactory.build(this.wrapper.client, this.wrapper).copyDirective();
+    }
+
+    if (_client === AureliaFactory.tokens().AURELIA1) {
+      return AureliaFactory.build(_client, this.wrapper).copyDirective();
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_endpoint" id="apidoc.module.generator-ng-fullstack.sub_generators_endpoint">module generator-ng-fullstack.sub_generators_endpoint</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_endpoint.EndpointSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_endpoint.EndpointSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_endpoint.</span>EndpointSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class EndpointSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.feature  = optionsParser.getFeature(this.wrapper.options);
+    this.wrapper.name = this.wrapper.name;
+    this.wrapper.userNameSpace = this.wrapper.config.get(&#x27;userNameSpace&#x27;);
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.server = this.wrapper.config.get(&#x27;server&#x27;);
+    this.wrapper.transpilerServer = this.wrapper.config.get(&#x27;transpilerServer&#x27;);
+
+    if (this.wrapper.server === ServerFactory.tokens().NODE) {
+      this.wrapper.nodeWebFrameworkServer = this.wrapper.config.get(&#x27;nodeWebFrameworkServer&#x27;);
+    } else {
+      this.wrapper.goWebFrameworkServer = this.wrapper.config.get(&#x27;goWebFrameworkServer&#x27;);
+    }
+
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;endpoint&#x27;
+    });
+  }
+
+  writing() {
+    if (!this.wrapper.feature.length)
+        throw new FeatureMissingError();
+
+    switch (this.wrapper.server) {
+        case ServerFactory.tokens().GO: GoFactory.build(this.wrapper).copyFiles(); break;
+        case ServerFactory.tokens().NODE: NodeFactory.build(this.wrapper).copyFiles(); break;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_factory" id="apidoc.module.generator-ng-fullstack.sub_generators_factory">module generator-ng-fullstack.sub_generators_factory</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_factory.FactorySubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_factory.FactorySubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_factory.</span>FactorySubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class FactorySubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;factory&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if ((_client === AngularFactory.tokens().NG1) || (_client === AngularFactory.tokens().NG2)) {
+      return AngularFactory.build(this.wrapper.client, this.wrapper).copyFactory();
+    }
+
+    if (_client === VueFactory.tokens().VUE2) {
+      return VueFactory.build(this.wrapper.client, this.wrapper).copyFactory();
+    }
+
+    if (_client === AureliaFactory.tokens().AURELIA1) {
+      return AureliaFactory.build(_client, this.wrapper).copyFactory();
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_filter" id="apidoc.module.generator-ng-fullstack.sub_generators_filter">module generator-ng-fullstack.sub_generators_filter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_filter.FilterSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_filter.FilterSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_filter.</span>FilterSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class FilterSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;filter&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if (_client === AngularFactory.tokens().NG1) {
+      return AngularFactory.build(_client, this.wrapper).copyFilter();
+    }
+
+    if (_client === VueFactory.tokens().VUE2) {
+      return VueFactory.build(_client, this.wrapper).copyFilter();
+    }
+
+    if (_client === AureliaFactory.tokens().AURELIA1) {
+      return AureliaFactory.build(_client, this.wrapper).copyFilter();
+    }
+
+    throw new ModuleDoesntImplementError(_client, &#x27;filter&#x27;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_model" id="apidoc.module.generator-ng-fullstack.sub_generators_model">module generator-ng-fullstack.sub_generators_model</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_model.ModelSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_model.ModelSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_model.</span>ModelSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ModelSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;model&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if ((_client === AngularFactory.tokens().NG1) || (_client === AngularFactory.tokens().NG2)) {
+      return AngularFactory.build(this.wrapper.client, this.wrapper).copyModel();
+    }
+
+    if (_client === VueFactory.tokens().VUE2) {
+      return VueFactory.build(this.wrapper.client, this.wrapper).copyModel();
+    }
+
+    if (_client === AureliaFactory.tokens().AURELIA1) {
+      return AureliaFactory.build(_client, this.wrapper).copyModel();
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_module" id="apidoc.module.generator-ng-fullstack.sub_generators_module">module generator-ng-fullstack.sub_generators_module</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_module.ModuleSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_module.ModuleSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_module.</span>ModuleSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ModuleSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;module&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if ((_client === AngularFactory.tokens().NG1) || (_client === AngularFactory.tokens().NG2)) {
+      return AngularFactory.build(this.wrapper.client, this.wrapper).copyModule();
+    }
+
+    if (_client === VueFactory.tokens().VUE2) {
+      return VueFactory.build(this.wrapper.client, this.wrapper).copyModule();
+    }
+
+    if (_client === AureliaFactory.tokens().AURELIA1) {
+      return AureliaFactory.build(_client, this.wrapper).copyModule();
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_pipe" id="apidoc.module.generator-ng-fullstack.sub_generators_pipe">module generator-ng-fullstack.sub_generators_pipe</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_pipe.PipeSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_pipe.PipeSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_pipe.</span>PipeSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class PipeSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;pipe&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if (_client !== AngularFactory.tokens().NG2) {
+      throw new ModuleDoesntImplementError(_client, &#x27;pipe&#x27;);
+    }
+
+    AngularFactory.build(AngularFactory.tokens().NG2, this.wrapper).copyPipe();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_resource" id="apidoc.module.generator-ng-fullstack.sub_generators_resource">module generator-ng-fullstack.sub_generators_resource</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_resource.ResourceSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_resource.ResourceSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_resource.</span>ResourceSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ResourceSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;resource&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if (_client !== AngularFactory.tokens().NG1) {
+      throw new ModuleDoesntImplementError(_client, &#x27;resource&#x27;);
+    }
+
+    AngularFactory.build(AngularFactory.tokens().NG1, this.wrapper).copyResource();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_service" id="apidoc.module.generator-ng-fullstack.sub_generators_service">module generator-ng-fullstack.sub_generators_service</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_service.ServiceSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_service.ServiceSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_service.</span>ServiceSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ServiceSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.appName = this.wrapper.config.get(&#x27;appName&#x27;);
+    this.wrapper.testsSeparated = this.wrapper.config.get(&#x27;testsSeparated&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;service&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if ((_client === AngularFactory.tokens().NG1) || (_client === AngularFactory.tokens().NG2)) {
+      return AngularFactory.build(this.wrapper.client, this.wrapper).copyService();
+    }
+
+    if (_client === VueFactory.tokens().VUE2) {
+      return VueFactory.build(this.wrapper.client, this.wrapper).copyService();
+    }
+
+    if (_client === AureliaFactory.tokens().AURELIA1) {
+      return AureliaFactory.build(this.wrapper.client, this.wrapper).copyService();
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_style" id="apidoc.module.generator-ng-fullstack.sub_generators_style">module generator-ng-fullstack.sub_generators_style</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_style.StyleSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_style.StyleSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_style.</span>StyleSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class StyleSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+    this.wrapper.stylePreprocessor = this.wrapper.config.get(&#x27;stylePreprocessor&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;style&#x27;
+    });
+  }
+
+  writing() {
+    let _feature = optionsParser.getFeature(this.wrapper.options);
+    let _client = this.wrapper.client;
+
+    if (!_feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    if ((_client === AngularFactory.tokens().NG1) || (_client === AngularFactory.tokens().NG2)) {
+      return AngularFactory.build(this.wrapper.client, this.wrapper).copyStyle();
+    }
+
+    if (_client === VueFactory.tokens().VUE2) {
+      return VueFactory.build(this.wrapper.client, this.wrapper).copyStyle();
+    }
+
+    if (_client === AureliaFactory.tokens().AURELIA1) {
+      return AureliaFactory.build(this.wrapper.client, this.wrapper).copyStyle();
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.sub_generators_view" id="apidoc.module.generator-ng-fullstack.sub_generators_view">module generator-ng-fullstack.sub_generators_view</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.sub_generators_view.ViewSubGenerator" id="apidoc.element.generator-ng-fullstack.sub_generators_view.ViewSubGenerator">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.sub_generators_view.</span>ViewSubGenerator
+        <span class="apidocSignatureSpan">(generator)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class ViewSubGenerator {
+  constructor(generator) {
+    this.wrapper = generator;
+    this.wrapper.client = this.wrapper.config.get(&#x27;client&#x27;);
+  }
+
+  initializing() {
+    this.wrapper.argument(&#x27;name&#x27;, {
+      required: true,
+      type: String,
+      desc: &#x27;view&#x27;
+    });
+  }
+
+  writing() {
+    let feature = optionsParser.getFeature(this.wrapper.options);
+
+    if (!feature.length) {
+      throw new FeatureMissingError();
+    }
+
+    AngularFactory.build(this.wrapper.client, this.wrapper).copyTemplate();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.utils" id="apidoc.module.generator-ng-fullstack.utils">module generator-ng-fullstack.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.utils.capitalizeFirst" id="apidoc.element.generator-ng-fullstack.utils.capitalizeFirst">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.utils.</span>capitalizeFirst
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(str) =&#x3e; {
+  if (!str) {
+    return &#x27;&#x27;;
+  }
+
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+
+  copyComponent(pathTemplate) {
+let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+this.generator.template(_pathTemplate + &#x27;ng1/component.js&#x27;,
+  `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/components/${this.generator.name}.js`, {
+    nameCapitalized: utils.<span class="apidocCodeKeywordSpan">capitalizeFirst</span>(this.generator.name),
+    name: this.generator.name,
+    feature: this.generator.options.feature,
+    appName: this.generator.appName
+});
+
+this.generator.template(_pathTemplate + &#x27;ng1/component.html&#x27;,
+  `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/templates/${this.generator.name}.html`, {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.vue" id="apidoc.module.generator-ng-fullstack.vue">module generator-ng-fullstack.vue</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.vue.Vue2" id="apidoc.element.generator-ng-fullstack.vue.Vue2">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.vue.</span>Vue2
+        <span class="apidocSignatureSpan">(gen)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class Vue2 {
+  constructor(gen) {
+    this.generator = gen;
+    this.testsSeparated = gen &#x26;&#x26; gen.testsSeparated !== undefined &#x26;&#x26; typeof(gen.testsSeparated) === &#x22;boolean&#x22; ? gen.testsSeparated
+ : true;
+    this.testsPath = this.testsSeparated ? knownPaths.PATH_CLIENT_FEATURES_TEST : knownPaths.PATH_CLIENT_FEATURES;
+  }
+
+  copyClient() {
+    this.generator.directory(&#x27;tasks/client/vue2&#x27;, &#x27;tasks/client&#x27;);
+    this.generator.directory(&#x27;client/vue2&#x27;, &#x27;client&#x27;);
+    this.generator.template(&#x27;_karma.conf_vue2.js&#x27;, &#x27;karma.conf.js&#x27;, {
+      testsSeparated: this.testsSeparated
+    });
+
+    if(this.testsSeparated) {
+      this.generator.directory(&#x27;tests/client_vue2&#x27;, &#x27;tests/client&#x27;);
+    } else {
+      let _pathTest = [
+        [&#x27;tests/client_vue2/todo/components/todo-cmp_test.js&#x27;, &#x27;client/dev/todo/components/todo-cmp_test.js&#x27;],
+        [&#x27;tests/client_vue2/todo/models/todo-model_test.js&#x27;, &#x27;client/dev/todo/models/todo-model_test.js&#x27;],
+        [&#x27;tests/client_vue2/todo/services/todo-service_test.js&#x27;, &#x27;client/dev/todo/services/todo-service_test.js&#x27;]
+      ];
+
+      yoUtils.directory(this.generator, _pathTest, this.generator);
+    }
+
+    this.generator.template(&#x27;tasks/client/vue2/const.js&#x27;, &#x27;tasks/client/const.js&#x27;, {
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    this.generator.template(&#x27;tasks/client/vue2/build_css.js&#x27;, &#x27;tasks/client/build_css.js&#x27;, {
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    this.generator.template(&#x27;tasks/client/vue2/watch.js&#x27;, &#x27;tasks/client/watch.js&#x27;, {
+      secure: !!this.generator.secure,
+      stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+    });
+
+    copyStyleForMainGenerator(this.generator, &#x27;client/dev/todo/styles/todo&#x27;);
+  }
+
+  copyComponent(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;vue2/component.js&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/components/${this.generator.name}.js`, {
+        nameCapitalized: utils.capitalizeFirst(this.generator.name),
+        name: this.generator.name,
+        feature: this.generator.options.feature
+    });
+
+    this.generator.template(_pathTemplate + &#x27;vue2/component.css&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/styles/${this.generator.name}.css`
+    );
+
+    this.generator.template(_pathTemplate + &#x27;vue2/component_test.js&#x27;,
+      `${this.testsPath + this.generator.options.feature}/components/${this.generator.name}_test.js`, {
+        name: utils.capitalizeFirst(this.generator.name),
+        nameLowerCase: this.generator.name.toLowerCase()
+    });
+  }
+
+  copyDirective(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;vue2/directive.js&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/directives/${this.generator.name}.js`, {
+        name: this.generator.name
+    });
+
+    this.generator.template(_pathTemplate + &#x27;vue2/directive_test.js&#x27;,
+      `${this.testsPath + this.generator.options.feature}/directives/${this.generator.name}_test.js`, {
+        name: this.generator.name
+    });
+  }
+
+
+  copyFactory(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;vue2/factory.js&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/factory/${this.generator.name}.js`, {
+        name: utils.capitalizeFirst(this.generator.name)
+    });
+
+    this.generator.template(_pathTemplate + &#x27;vue2/factory_test.js&#x27;,
+      `${this.testsPath + this.generator.options.feature}/factory/${this.generator.name}_test.js`, {
+        name: utils.capitalizeFirst(this.generator.name)
+    });
+  }
+
+  copyService(pathTemplate) {
+    let _pathTemplate = pathTemplate || &#x27;&#x27;;
+
+    this.generator.template(_pathTemplate + &#x27;vue2/service.js&#x27;,
+      `${knownPaths.PATH_CLIENT_FEATURES + this.generator.options.feature}/services/${this.generator.name}.js`, {
+        name: this.generator.name
+    });
+
+    this.g ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.vue.VueFactory" id="apidoc.element.generator-ng-fullstack.vue.VueFactory">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.vue.</span>VueFactory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">class VueFactory {
+  static tokens() {
+    return {
+      VUE2: &#x27;vue2&#x27;
+    };
+  }
+
+  static build(token, gen) {
+    switch(token) {
+      case VueFactory.tokens().VUE2: return new Vue2(gen);
+      default: throw new Error(`Invalid Vue token: ${token}.`);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.generator-ng-fullstack.yeoman_utils" id="apidoc.module.generator-ng-fullstack.yeoman_utils">module generator-ng-fullstack.yeoman_utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.generator-ng-fullstack.yeoman_utils.directory" id="apidoc.element.generator-ng-fullstack.yeoman_utils.directory">
+        function <span class="apidocSignatureSpan">generator-ng-fullstack.yeoman_utils.</span>directory
+        <span class="apidocSignatureSpan">(gen, paths, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">directory = function (gen, paths, opts) {
+  // paths has to be the certain way:
+  // [
+  //     [&#x27;path1&#x27;, &#x27;path2&#x27;]
+  //     [&#x27;path3&#x27;, &#x27;path4&#x27;]
+  //     [&#x27;path5&#x27;, &#x27;path6&#x27;]
+  //     [&#x27;path7&#x27;, &#x27;path8&#x27;]
+  //]
+
+  if (!gen) {
+    throw new TypeError(&#x27;Generator is not defined.&#x27;);
+  }
+
+  if (!gen.template || (typeof gen.template !== &#x27;function&#x27;)) {
+    throw new TypeError(&#x27;Template is not a valid method of the generator.&#x27;);
+  }
+
+  paths.forEach((p) =&#x3e; {
+    gen.template(p[0], p[1], opts);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  _pathTest = [
+    [&#x27;tests/client_ng1/todo/controllers/todo-controller_test.js&#x27;, &#x27;client/dev/todo/controllers/todo-controller_test
+.js&#x27;],
+    [&#x27;tests/client_ng1/todo/models/todo-model_test.js&#x27;, &#x27;client/dev/todo/models/todo-model_test.js&#x27;],
+    [&#x27;tests/client_ng1/todo/services/todo-dao_test.js&#x27;, &#x27;client/dev/todo/services/todo-dao_test.js&#x27;]
+  ];
+}
+
+this.generator.<span class="apidocCodeKeywordSpan">directory</span>(&#x27;tasks/client/ng1&#x27;, &#x27;tasks/client&#x27;);
+
+this.generator.template(&#x27;tasks/client/ng1/const.js&#x27;, &#x27;tasks/client/const.js&#x27;, {
+  stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+});
+
+this.generator.template(&#x27;tasks/client/ng1/build_css.js&#x27;, &#x27;tasks/client/build_css.js&#x27;, {
+  stylePreprocessor: normalizeStylePreprocessor(this.generator.stylePreprocessor)
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
